@@ -8,7 +8,7 @@ namespace SBC {
 namespace ToC {
 
 // Compiles a brainf program into a C one.
-std::string compile(std::string& program);
+std::string compile(const std::string& program);
 
 }
 }
