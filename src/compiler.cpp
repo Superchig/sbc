@@ -5,9 +5,9 @@ namespace SBC {
 namespace ToC {
 
 // Forward declare
-std::string compile_char_with_newline(char brainf_char);
+std::string compile_char_with_newline(const char brainf_char);
 
-std::string compile(std::string& program) {
+std::string compile(const std::string& program) {
 	std::string compiled = "int main(){\n"
 		"char m[1000] = {0};\n"
 		"char* p = m;";
@@ -22,7 +22,7 @@ std::string compile(std::string& program) {
 }
 
 // Takes a brainf character and returns its C equivalent, with a newline appended.
-std::string compile_char_with_newline(char brainf_char) {
+std::string compile_char_with_newline(const char brainf_char) {
 	switch (brainf_char) {
 	case '>':
 		return "++p;\n";

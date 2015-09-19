@@ -6,7 +6,7 @@ int main(const int, const char**)
 	using SBC::ToC::compile;
 	using std::cout;
 
-	std::string hello_world = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>"
+	std::string hello_world = "++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>\n"
 		".>---.++++potatoes are awesome+++..+++.>>.<-.<.+++.------.--------.>>+.>++.";
 
 	cout << compile(hello_world) << '\n';
